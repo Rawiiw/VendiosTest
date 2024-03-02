@@ -1,0 +1,33 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vendios"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   
+    x:Class="Vendios.MainPage"
+    mc:Ignorable="d" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20">
+            <Button Click="ButtonPayment_Click" Content="Душевая" Height="137" Width="306" FontSize="48" Foreground="White" Background="#FF12419F" HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20">
+            <Button Click="ButtonPayment_Click" Content="Стирка" Height="137" Width="306"  FontSize="48" Foreground="White" Background="#FF12419F" HorizontalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20">
+            <Button Click="ButtonPayment_Click" Content="Туалет" Height="137" Width="306"  FontSize="48" Foreground="White" Background="#FF12419F" HorizontalAlignment="Center" />
+        </StackPanel>
+        <TextBlock x:Name="textBlock" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="200 руб." VerticalAlignment="Center" FontSize="48" Foreground="#FFDC450C" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Копировать" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="200 руб." VerticalAlignment="Center" FontSize="48" Foreground="#FFDC450C" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Копировать1" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="25 руб." VerticalAlignment="Center" FontSize="48" Foreground="#FFDC450C" FontWeight="Bold"/>
+    </Grid>
+</Page>
