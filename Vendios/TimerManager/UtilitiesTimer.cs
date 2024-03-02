@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Windows.ApplicationModel.Background;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -17,8 +17,9 @@ namespace Vendios
         public UtilitiesTimer(TextBlock timerTextBlock, Frame frame)
         {
             _timerTextBlock = timerTextBlock;
-            _frame = frame;
+            _frame = Window.Current.Content as Frame;
         }
+
 
         /// <summary>
         ///регистрируем фоновую задачу для отслеживания времени.
